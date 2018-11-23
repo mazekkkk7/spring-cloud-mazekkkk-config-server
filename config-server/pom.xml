@@ -70,7 +70,7 @@
                 <configuration>
                     <dockerCertPath>/Users/maze/.docker/machine/machines/default</dockerCertPath>
                     <dockerHost>https://192.168.99.100:2376</dockerHost>
-                    <imageName>mazekkkk/spring-cloud-mazekkkk-config-server:0.0.1</imageName>
+                    <imageName>mazekkkk/spring-cloud-mazekkkk-config-server:0.0.2</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resouce>
@@ -79,8 +79,8 @@
                             <include>${project.build.finalName}.jar</include>
                         </resouce>
                     </resources>
-                    <!--<serverId>docker-hub</serverId>-->
-                    <!--<forceTags>true</forceTags>-->
+                    <serverId>docker-hub</serverId>
+                    <forceTags>true</forceTags>
                 </configuration>
             </plugin>
             <!--docker plugins end-->
